@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Νέα – Open Thessaloniki</title>
+  <meta name="description" content="Όλα τα νέα, οι συναντήσεις, τα roadmaps και οι δράσεις ανοικτών δεδομένων της ομάδας OpenThessaloniki.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container">
+      <a href="mailto:openthessaloniki@gmail.com" class="top-email" title="Mail Us">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        openthessaloniki@gmail.com
+      </a>
+      <div class="top-socials">
+        <a href="http://www.facebook.com/openthessaloniki" title="Open Thessaloniki on Facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://twitter.com/openthessalonik" title="Open Thessaloniki on Twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Sticky Header -->
+  <header class="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-wrapper" title="Open Thessaloniki">
+        <img src="assets/logo.svg" alt="Open Thessaloniki" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle-btn" aria-expanded="false" aria-label="Μενού πλοήγησης">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        Μενού
+      </button>
+
+      <nav aria-label="Κεντρική Πλοήγηση">
+        <ul class="nav-links-list">
+          <li class="nav-item"><a href="index.html">Αρχική</a></li>
+          <li class="nav-item"><a href="about.html">Σχετικά με εμάς</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item active"><a href="news.html" aria-current="page">Νέα</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="press.html">Press</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon search-toggle-btn" aria-label="Αναζήτηση">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <div class="search-modal">
+          <form class="search-form-wrap">
+            <div class="search-input-group">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="search" placeholder="Αναζήτηση στα νέα..." class="search-input-field" aria-label="Όρος αναζήτησης">
+              <button type="submit" class="btn-primary" style="padding: 6px 14px; font-size: 0.85rem;">Αναζήτηση</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Page Header Banner -->
+    <section class="page-header-banner">
+      <span class="page-header-tag">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path></svg>
+        Ενημερώσεις &amp; Άρθρα
+      </span>
+      <h1 class="page-header-title">Νέα</h1>
+      <p class="page-header-lead">
+        Αρχείο δράσεων, δημοσιεύσεων, roadmap και ανακοινώσεων της ομάδας OpenThessaloniki.
+      </p>
+    </section>
+
+    <!-- Filter Control Bar -->
+    <div class="filter-pills-bar">
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="filter-pill-btn is-active" data-filter="all">Όλα τα άρθρα</button>
+        <button class="filter-pill-btn" data-filter="open-data">Open Data</button>
+        <button class="filter-pill-btn" data-filter="events">Συναντήσεις &amp; Events</button>
+        <button class="filter-pill-btn" data-filter="projects">Projects</button>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--slate-500); font-weight: 500;">
+        Φιλτράρισμα θεματολογίας
+      </div>
+    </div>
+
+    <div class="no-search-results" style="display: none; text-align: center; padding: 60px 20px; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); margin-bottom: 30px;">
+      <h3 style="color: var(--slate-800); font-family: var(--font-display);">Δεν βρέθηκαν αποτελέσματα</h3>
+      <p style="color: var(--slate-500); margin-top: 8px;">Δοκιμάστε να αναζητήσετε με διαφορετικές λέξεις-κλειδιά.</p>
+    </div>
+
+    <!-- Article 1 -->
+    <article class="news-card-article" data-category="open-data case-studies e-book">
+      <div class="news-card-meta">
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          28/09/2016
+        </span>
+        <span>•</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Open Thessaloniki
+        </span>
+      </div>
+
+      <h2 class="news-card-title">E-book: The Global Impact of Open DATA</h2>
+
+      <div class="news-card-body">
+        <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 20px;">
+          <img src="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2016/09/open-data-book-390x541.png?resize=116%2C161" alt="Open Data Book" style="width: 120px; border-radius: var(--radius-sm); box-shadow: var(--shadow-md); align-self: flex-start;">
+          <div style="flex: 1; min-width: 280px;">
+            <p style="margin-bottom: 14px;">
+              Τα ανοιχτά δεδομένα έχουν συμβάλλει στην ενίσχυση της οικονομικής καινοτομίας, του κοινωνικού μετασχηματισμού καθώς και στην ανάδυση νέων μορφών πολιτικής και κυβερνητικής λογοδοσίας τα τελευταία χρόνια, αλλά λίγοι άνθρωποι καταλαβαίνουν πώς λειτουργούν τα ανοιχτά δεδομένα. Αυτό το βιβλίο, που ολοκληρώθηκε με την υποστήριξη του δικτύου Omidyar, παρουσιάζει λεπτομερείς μελέτες περιπτώσεων έργων βασισμένων στα ανοιχτά δεδομένα από όλο τον κόσμο, μαζί με μια σε βάθος ανάλυση του τι λειτουργεί και τι όχι.
+            </p>
+            <p>
+              Οι συγγραφείς Andrew Young και Stefaan Verhulst, σε συνεργασία με το εργαστήριο GovLab του Πανεπιστημίου της Νέας Υόρκης, εξηγούν πώς αυτά τα έργα έχουν συμβάλλει στο να γίνουν οι κυβερνήσεις πιο υπεύθυνες και αποτελεσματικές, έχουν βοηθήσει στη χάραξη πολιτικής για να βρεθούν λύσεις σε προηγουμένως δυσεπίλυτα δημόσια προβλήματα, έχουν δημιουργήσει νέες οικονομικές ευκαιρίες και έχουν ενισχύσει τους πολίτες μέσω νέων μορφών κοινωνικής κινητοποίησης.
+            </p>
+          </div>
+        </div>
+
+        <p style="font-weight: 600; color: var(--slate-800); margin-bottom: 8px;">Πιο συγκεκριμένα, το βιβλίο αυτό περιλαμβάνει:</p>
+        <ul style="padding-left: 24px; margin-bottom: 20px;">
+          <li>Συστάσεις και βήματα εφαρμογής για δημόσιους φορείς, επιχειρηματίες και ακτιβιστές που επιθυμούν να αξιοποιήσουν τα ανοιχτά δεδομένα.</li>
+          <li>Βασικές προκλήσεις, όπως η έλλειψη πόρων και η ανεπαρκής προστασία της ιδιωτικής ζωής ή προστασίας της ασφάλειας.</li>
+          <li>Τέσσερις προϋποθέσεις που επιτρέπουν τη διάθεση ανοιχτών δεδομένων στην εργασία, συμπεριλαμβανομένων των οργανωτικών συμπράξεων και συνεργασιών.</li>
+          <li>Περιπτωσιολογικές μελέτες των έργων ανοιχτών δεδομένων για τη βελτίωση της διακυβέρνησης στη Βραζιλία, τη Σουηδία, τη Σλοβακία και άλλες χώρες.</li>
+          <li>Έργα για την ενδυνάμωση των πολιτών στην Τανζανία, την Κένυα, το Μεξικό και την Ουρουγουάη.</li>
+          <li>Δημόσιες προσπάθειες επίλυσης προβλημάτων βασισμένες στα ανοιχτά δεδομένα σχετικά με τον ιό Ebola στη Σιέρα Λεόνε, τον δάγκειο πυρετό στη Σιγκαπούρη και τους σεισμούς στη Νέα Ζηλανδία.</li>
+        </ul>
+
+        <div>
+          <a href="http://www.oreilly.com/data/free/files/the-global-impact-of-open-data.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Κατεβάστε το αρχείο δωρεάν σε PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="news-tags-group">
+        <span class="news-tag-badge">#open data</span>
+        <span class="news-tag-badge">#e-book</span>
+        <span class="news-tag-badge">#case studies</span>
+      </div>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="news-card-article" data-category="open-data events projects">
+      <div class="news-card-meta">
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          21/06/2016
+        </span>
+        <span>•</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Open Thessaloniki
+        </span>
+      </div>
+
+      <h2 class="news-card-title">ΘΕΣ. Open Test</h2>
+
+      <div class="news-card-body">
+        <p style="margin-bottom: 16px;">
+          Η ομάδα εργασίας <em>OpenThessaloniki</em> καλεί όλους όσους ενδιαφέρονται και μοιράζονται το όραμα μιας Ανοιχτής Πόλης να συμμετέχουν στη ζωντανή <strong>Δράση Αξιολόγησης Συνόλων Ανοιχτών Δεδομένων</strong>! Η Δράση θα συντελεστεί σε δύο στάδια:
+        </p>
+        <ul style="padding-left: 24px; margin-bottom: 16px;">
+          <li>το <strong>Σάββατο 25.06</strong> στις 11:00 στο <em>TechMinistry</em> θα γίνει η Αξιολόγηση και</li>
+          <li>την <strong>Τετάρτη 29.06</strong> στις 18:00 στο <em>TechMinistry</em> το κλείσιμο της Αξιολόγησης και η εξαγωγή των Αποτελεσμάτων.</li>
+        </ul>
+
+        <p style="margin-bottom: 16px;">
+          Από τις αρχές αυτού του χρόνου, η ομάδα <em>OpenThessaloniki</em> μελέτησε και δημιούργησε μια μεθοδολογία για τον έλεγχο και την αξιολόγηση κάθε (σύγχρονου ή μελλοντικού) δημόσια προσφερόμενου Συνόλου Δεδομένων. Τη μέθοδο αυτή θέλουμε να δοκιμάσουμε και να τεστάρουμε όλοι μαζί αξιολογώντας τα <strong>Σύνολα Ανοιχτών Δεδομένων</strong> που προσφέρει ο Δήμος Θεσσαλονίκης αυτό το Σάββατο 25/06 στο χώρο του <strong>Tech Ministry</strong>.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+          Η διαδικασία είναι πολύ απλή: ο εθελοντής αξιολογητής ανοίγει τη Φόρμα Αξιολόγησης στην οθόνη του, επιλέγει ένα Σύνολο Δεδομένων του Δήμου που τον ενδιαφέρει, το ανοίγει κι αυτό στην οθόνη του, και εξετάζοντας το Σύνολο Δεδομένων απαντά σε κάθε μια ερώτηση της φόρμας και βαθμολογεί το Σύνολο Δεδομένων. Στο τέλος, η ομάδα OpenThessaloniki θα συγκεντρώσει όλα τα αποτελέσματα και θα συντάξει μια Αναφορά Αποτελεσμάτων, η οποία θα σταλεί στο Δήμο Θεσσαλονίκης.
+        </p>
+
+        <div style="text-align: center; margin: 24px 0;">
+          <img src="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2016/06/3-1.jpg?resize=694%2C981" 
+               data-full-img="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2016/06/3-1.jpg?fit=3508%2C4961&ssl=1"
+               alt="Αφίσα ΘΕΣ Open Test" 
+               loading="lazy" 
+               style="max-height: 480px; margin: 0 auto; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); cursor: zoom-in;">
+        </div>
+      </div>
+
+      <div class="news-tags-group">
+        <span class="news-tag-badge">#open data</span>
+        <span class="news-tag-badge">#events</span>
+        <span class="news-tag-badge">#Tech Ministry</span>
+        <span class="news-tag-badge">#benchmarking</span>
+      </div>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="news-card-article" data-category="open-data projects">
+      <div class="news-card-meta">
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          19/03/2016
+        </span>
+        <span>•</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Open Thessaloniki
+        </span>
+      </div>
+
+      <h2 class="news-card-title">Συμβολή στην Αλληλεγγύη</h2>
+
+      <div class="news-card-body">
+        <div style="margin-bottom: 20px;">
+          <img src="https://i0.wp.com/www.efsyn.gr/sites/efsyn.gr/files/wysiwyg/eidomeni_prosfyges_2.jpg?resize=630%2C420" alt="Ειδομένη Πρόσφυγες" loading="lazy" style="border-radius: var(--radius-md); max-height: 320px; width: 100%; object-fit: cover;">
+        </div>
+
+        <p style="margin-bottom: 16px;">
+          Ήδη στην προτελευταία μας συνάντηση μας είχε απασχολήσει μια δράση σχετική με την δραματική επικαιρότητα των προσφύγων της Ειδομένης: η ανοιχτή τήρηση και διαχείριση δεδομένων, που να υποστηρίζουν την ορθολογική οργάνωση της παροχής βοήθειας προς τους πρόσφυγες.
+        </p>
+
+        <p style="margin-bottom: 16px;">
+          Προτάθηκε η δημιουργία μιας online πλατφόρμας, με τη βοήθεια της οποίας θα γίνεται η καταγραφή και η διαχείριση των αναγκών, των προσφορών και της απορρόφησής τους. Με επίκεντρο αυτή τη βάση δεδομένων δημιουργείται ένα Παρατηρητήριο αναγκών και προσφορών.
+        </p>
+      </div>
+
+      <div class="news-tags-group">
+        <span class="news-tag-badge">#αλληλεγγύη</span>
+        <span class="news-tag-badge">#open data</span>
+        <span class="news-tag-badge">#social impact</span>
+      </div>
+    </article>
+
+    <!-- Article 4 -->
+    <article class="news-card-article" data-category="events">
+      <div class="news-card-meta">
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          10/01/2016
+        </span>
+        <span>•</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Open Thessaloniki
+        </span>
+      </div>
+
+      <h2 class="news-card-title">1η συνάντηση &amp; Roadmap 2015 – 2016</h2>
+
+      <div class="news-card-body">
+        <p style="margin-bottom: 16px;">
+          Ευχαριστούμε θερμά όλους &amp; όλες που συνέβαλαν στην διάδοση της 1ης συνάντησης του Open Thessaloniki για το 2016. Η στόχευση της ομάδας για το πρώτο 3μηνο του 2016 στράφηκε στην καταλογογράφηση και μελέτη των υφιστάμενων open datasets και open government applications του Δήμου Θεσσαλονίκης και των εφαρμογών του διαγωνισμού apps4greece.
+        </p>
+      </div>
+
+      <div class="news-tags-group">
+        <span class="news-tag-badge">#roadmap</span>
+        <span class="news-tag-badge">#community</span>
+      </div>
+    </article>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="site-main-footer">
+    <div class="container">
+      <div class="footer-grid-top">
+        <div>
+          <div class="footer-brand-title">Open Thessaloniki</div>
+          <p class="footer-brand-desc">
+            Τεχνικές αστικής καινοτομίας και ανοικτής διακυβέρνησης για μια ανοικτή Θεσσαλονίκη.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Σελίδες</h4>
+          <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="about.html">Σχετικά με εμάς</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">Νέα &amp; Ανακοινώσεις</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Κοινότητα</h4>
+          <ul>
+            <li><a href="gallery.html">Gallery Συναντήσεων</a></li>
+            <li><a href="press.html">Press &amp; Media</a></li>
+            <li><a href="mailto:openthessaloniki@gmail.com">Επικοινωνία</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-legal">
+        <div>
+          // (ɔ)2026 | Ανάπτυξη: <a href="index.html">Ομάδα Open Thessaloniki</a> | Γραφιστική Επιμέλεια: <a href="https://www.behance.net/victwr" target="_blank" rel="noopener noreferrer">Βίκτωρ Γκουντάρας</a>
+        </div>
+        <div>
+          // Η ιστοσελίδα <a href="index.html">Open Thessaloniki</a> δημιουργήθηκε με το λογισμικό ανοικτού κώδικα <a href="https://www.wordpress.org" target="_blank" rel="noopener noreferrer">WordPress</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="fab-back-to-top" aria-label="Επιστροφή στην κορυφή">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

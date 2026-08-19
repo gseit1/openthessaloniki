@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" fill="none">
+  <!-- Base Circular Arc (Lower-Left Ring) -->
+  <path d="M 300 248 
+           A 250 250 0 1 0 500 424 
+           H 375 
+           A 125 125 0 1 1 300 373 
+           V 248 Z" 
+        fill="#00a59b" />
+
+  <!-- Grid Pixel Blocks -->
+  <rect x="345" y="198" width="46" height="46" fill="#00a59b" />
+  <rect x="391" y="244" width="88" height="88" fill="#00a59b" />
+  <rect x="567" y="247" width="86" height="85" fill="#00a59b" />
+  <rect x="300" y="332" width="91" height="92" fill="#00a59b" />
+  <rect x="479" y="332" width="91" height="92" fill="#00a59b" />
+  <rect x="653" y="332" width="46" height="46" fill="#00a59b" />
+</svg>

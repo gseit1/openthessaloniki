@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120" fill="none">
+  <!-- Official OpenThessaloniki Icon Symbol -->
+  <g transform="translate(10, 10) scale(0.125)">
+    <!-- Base Circular Arc (Lower-Left Ring) -->
+    <path d="M 300 248 
+             A 250 250 0 1 0 500 424 
+             H 375 
+             A 125 125 0 1 1 300 373 
+             V 248 Z" 
+          fill="#00a59b" />
+
+    <!-- Grid Pixel Blocks -->
+    <!-- Top small pixel -->
+    <rect x="345" y="198" width="46" height="46" fill="#00a59b" />
+    
+    <!-- Row 1 pixels -->
+    <rect x="391" y="244" width="88" height="88" fill="#00a59b" />
+    <rect x="567" y="247" width="86" height="85" fill="#00a59b" />
+    
+    <!-- Row 2 pixels -->
+    <rect x="300" y="332" width="91" height="92" fill="#00a59b" />
+    <rect x="479" y="332" width="91" height="92" fill="#00a59b" />
+    <rect x="653" y="332" width="46" height="46" fill="#00a59b" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(125, 26)">
+    <text x="0" y="44" font-family="'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="38" letter-spacing="-0.03em" fill="#0f172a">
+      Open<tspan fill="#00a59b">Thessaloniki</tspan>
+    </text>
+    <text x="2" y="68" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="12" letter-spacing="0.22em" fill="#64748b" text-transform="uppercase">
+      CIVIC INNOVATION &amp; OPEN DATA
+    </text>
+  </g>
+</svg>
