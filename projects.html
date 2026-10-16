@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="el">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects – Open Thessaloniki</title>
-  <meta name="description" content="Ανακαλύψτε τα έργα και τις εφαρμογές αστικής καινοτομίας και ανοικτής διακυβέρνησης του OpenThessaloniki.">
+  <meta name="description"
+    content="Ανακαλύψτε τα έργα και τις εφαρμογές αστικής καινοτομίας και ανοικτής διακυβέρνησης του OpenThessaloniki.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
 </head>
+
 <body>
 
   <!-- Top Announcement Bar -->
   <div class="top-announcement">
     <div class="container">
       <a href="mailto:openthessaloniki@gmail.com" class="top-email" title="Mail Us">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-        openthessaloniki@gmail.com
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span class="top-email-text">openthessaloniki@gmail.com</span>
       </a>
       <div class="top-socials">
-        <a href="http://www.facebook.com/openthessaloniki" title="Open Thessaloniki on Facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <a href="http://www.facebook.com/openthessaloniki" title="Open Thessaloniki on Facebook" target="_blank"
+          rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
         </a>
-        <a href="https://twitter.com/openthessalonik" title="Open Thessaloniki on Twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        <a href="https://twitter.com/openthessalonik" title="Open Thessaloniki on Twitter" target="_blank"
+          rel="noopener noreferrer" aria-label="Twitter">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+          </svg>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Floating Sticky Header -->
+  <!-- Sticky Header -->
   <header class="site-header">
     <div class="navbar-container">
       <a href="index.html" class="brand-wrapper" title="Open Thessaloniki">
-        <img src="assets/logo.svg" alt="Open Thessaloniki" class="brand-logo-img">
+        <img src="assets/logo.svg" alt="Open Thessaloniki" class="brand-logo-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="brand-fallback">Open <span>Thessaloniki</span></span>
       </a>
 
-      <button class="mobile-toggle-btn" aria-expanded="false" aria-label="Μενού πλοήγησης">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        Μενού
+      <button class="mobile-toggle-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Μενού πλοήγησης">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span class="mobile-toggle-label">Μενού</span>
       </button>
 
-      <nav aria-label="Κεντρική Πλοήγηση">
+      <nav id="main-nav" class="main-nav" aria-label="Κεντρική Πλοήγηση">
         <ul class="nav-links-list">
           <li class="nav-item"><a href="index.html">Αρχική</a></li>
           <li class="nav-item"><a href="about.html">Σχετικά με εμάς</a></li>
@@ -54,191 +77,266 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="btn-icon search-toggle-btn" aria-label="Αναζήτηση">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <button class="btn-icon search-toggle-btn" aria-label="Αναζήτηση" aria-expanded="false"
+          aria-controls="search-panel">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
         </button>
-        <div class="search-modal">
-          <form class="search-form-wrap">
-            <div class="search-input-group">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              <input type="search" placeholder="Αναζήτηση στα projects..." class="search-input-field" aria-label="Όρος αναζήτησης">
-              <button type="submit" class="btn-primary" style="padding: 6px 14px; font-size: 0.85rem;">Αναζήτηση</button>
-            </div>
-          </form>
-        </div>
+      </div>
+
+      <div class="search-modal" id="search-panel">
+        <form class="search-form-wrap" role="search">
+          <div class="search-input-group">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="search" name="s" placeholder="Αναζήτηση στα projects..." class="search-input-field"
+              aria-label="Όρος αναζήτησης">
+            <button type="submit" class="btn btn-primary btn-sm">Αναζήτηση</button>
+          </div>
+        </form>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Page Header Banner -->
+  <main>
     <section class="page-header-banner">
-      <span class="page-header-tag">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-        Έργα &amp; Εφαρμογές
-      </span>
-      <h1 class="page-header-title">Projects</h1>
-      <p class="page-header-lead">
-        Σε αυτήν τη σελίδα μπορείτε να βρείτε πληροφορίες για τα projects μας.
-      </p>
-    </section>
-
-    <!-- Project 1: User Stories -->
-    <section class="project-showcase">
-      <div class="project-badge-pill">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-        Civic Experiment v2.0
-      </div>
-
-      <h2 style="font-family: var(--font-display); font-size: 1.85rem; color: var(--slate-900); font-weight: 800; margin-bottom: 8px;">
-        Ιστορίες Χρήστη (User Stories) για την Μητροπολιτική Ενότητα Θεσσαλονίκης (v2.0)
-      </h2>
-      <p style="color: var(--teal-600); font-weight: 600; margin-bottom: 16px;">Αστικό Πείραμα!</p>
-
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        Οι ιστορίες χρήστη (user stories) είναι ένα εργαλείο που χρησιμοποιούμε στην ανάπτυξη λογισμικού με χρήση ευέλικτων μεθοδολογιών (agile methodologies). Είναι ένας απλός τρόπος περιγραφής απαιτήσεων από τον τελικό χρήστη της εφαρμογής σε φυσική γλώσσα που ακολουθεί το εξής τρίπτυχο:
-      </p>
-
-      <div class="user-story-blueprint">
-        <div class="user-story-line">
-          <span class="user-story-keyword">Σαν</span>
-          <span>[ΡΟΛΟΣ]</span>
-        </div>
-        <div class="user-story-line">
-          <span class="user-story-keyword">Θα ήθελα</span>
-          <span>[ΑΝΑΓΚΗ]</span>
-        </div>
-        <div class="user-story-line">
-          <span class="user-story-keyword">Ώστε</span>
-          <span>[ΩΦΕΛΙΜΟ ΑΠΟΤΕΛΕΣΜΑ]</span>
-        </div>
-      </div>
-
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 16px;">
-        Ακολουθώντας <strong>τον σύνδεσμο <a href="https://bio.link/userstoriesskg" target="_blank" rel="noopener noreferrer">https://bio.link/userstoriesskg</a></strong> μπορείτε να φτιάξετε τις δικές σας ιστορίες χρήστη για την πόλη μας.
-      </p>
-
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 24px;">
-        Το πρωτότυπο που βλέπετε ακολουθώντας το παραπάνω link, φτιάχθηκε σε περίπου 3 ώρες αξιοποιώντας τις τεχνολογίες: Google Forms, Google Spreadsheets και την πλατφόρμα bio.link. Όλα τα παραπάνω εργαλεία προσφέρονται δωρεάν.
-      </p>
-
-      <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: var(--slate-900); font-weight: 700; margin-bottom: 10px;">
-        Πως το χρησιμοποιώ;
-      </h3>
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        Από την κεντρική οθόνη επιλέγετε τον Δήμο για τον οποίο θέλετε να υποβάλετε μια πρόταση:
-      </p>
-
-      <div class="preview-mockup-row">
-        <div class="preview-mockup-box">
-          <img src="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_2.jpg?fit=339%2C679&ssl=1" 
-               data-full-img="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_2.jpg?fit=339%2C679&ssl=1"
-               alt="Επιλογή Δήμου - User Stories SKG" 
-               loading="lazy" 
-               style="max-height: 380px;">
-          <p style="font-size: 0.875rem; font-weight: 600; color: var(--slate-600); margin-top: 12px;">Βήμα 1: Επιλογή Δήμου</p>
-        </div>
-        <div class="preview-mockup-box">
-          <img src="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_4.jpg?fit=364%2C794&ssl=1" 
-               data-full-img="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_4.jpg?fit=364%2C794&ssl=1"
-               alt="Συμπλήρωση Φόρμας - User Stories SKG" 
-               loading="lazy" 
-               style="max-height: 380px;">
-          <p style="font-size: 0.875rem; font-weight: 600; color: var(--slate-600); margin-top: 12px;">Βήμα 2: Συμπλήρωση Φόρμας</p>
-        </div>
-      </div>
-
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        Στην συνέχεια συμπληρώνετε τη φόρμα που εμφανίζεται στην οθόνη σας.
-      </p>
-
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 24px;">
-        Έχετε τελειώσει! Μπορείτε να δείτε συγκεντρωτικά τα αιτήματα των πολιτών ανά Δήμο <a href="https://docs.google.com/spreadsheets/d/1drVGZbbhA2ObnEbYOMDmAUUToQVEQnaZ83SBqAE4BUw/edit#gid=383896163" target="_blank" rel="noopener noreferrer"><strong>σε αυτόν τον σύνδεσμο</strong></a>.
-      </p>
-
-      <div style="background: #fefce8; border: 1px solid #fef08a; border-left: 4px solid #ca8a04; border-radius: var(--radius-md); padding: 20px; margin: 24px 0;">
-        <h4 style="color: #854d0e; font-weight: 700; margin-bottom: 8px;">ΣΗΜΕΙΩΣΕΙΣ:</h4>
-        <ul style="color: #713f12; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
-          <li>Η κατάθεση ενός αιτήματος είναι ανώνυμη. Δεν θα σας ζητηθεί κανενός είδους προσωπικό δεδομένο, ούτε καν διεύθυνση e-mail.</li>
-          <li>Τα αιτήματα που καταθέτετε είναι διαθέσιμα δημόσια μέσω <a href="https://docs.google.com/spreadsheets/d/1drVGZbbhA2ObnEbYOMDmAUUToQVEQnaZ83SBqAE4BUw/edit#gid=383896163" target="_blank" rel="noopener noreferrer" style="color: #854d0e; text-decoration: underline;">αυτού του συνδέσμου</a>. Ως εκ τούτου πρέπει να είστε προσεκτικοί σχετικά με τα στοιχεία που δημοσιοποιείτε καθώς καθίστανται δημόσια διαθέσιμα. Επίσης παρακαλούμε για την επικοδομητική σας κριτική. Θα ήταν λυπηρό να αναγκαστούμε να κατεβάσουμε την υπηρεσία επειδή κάποιοι χρήστες κατέθεσαν προτάσεις που περιείχαν άσεμνη φρασεολογία, ύβρεις ή προσβλητικό περιεχόμενο.</li>
-        </ul>
-      </div>
-
-      <p style="font-size: 1.05rem; font-weight: 600; color: var(--slate-800); margin-bottom: 20px;">
-        Σας ευχαριστούμε εκ των προτέρων για την συμμετοχή!
-      </p>
-
-      <div>
-        <a href="https://bio.link/userstoriesskg" target="_blank" rel="noopener noreferrer" class="btn-primary">
-          Άνοιγμα bio.link/userstoriesskg &rarr;
-        </a>
+      <div class="container">
+        <span class="page-header-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          Έργα &amp; Εφαρμογές
+        </span>
+        <h1 class="page-header-title">Projects</h1>
+        <p class="page-header-lead">
+          Σε αυτήν τη σελίδα μπορείτε να βρείτε πληροφορίες για τα projects μας.
+        </p>
       </div>
     </section>
 
-    <!-- Project 2: Fire Prevention -->
-    <section class="project-showcase">
-      <div class="project-badge-pill" style="background: #fff1f2; color: #e11d48; border-color: #fecdd3;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-        Civic Safety
-      </div>
+    <div class="container page-body">
+      <!-- Project 1: User Stories -->
+      <section class="project-showcase" aria-labelledby="project-user-stories">
+        <header class="project-head">
+          <span class="project-badge-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            Civic Experiment v2.0
+          </span>
+          <h2 class="project-title" id="project-user-stories">Ιστορίες Χρήστη (User Stories) για την Μητροπολιτική
+            Ενότητα Θεσσαλονίκης (v2.0)</h2>
+          <p class="project-subtitle">Αστικό Πείραμα!</p>
+        </header>
 
-      <h2 style="font-family: var(--font-display); font-size: 1.85rem; color: var(--slate-900); font-weight: 800; margin-bottom: 16px;">
-        Β. Πρόληψη πυρκαγιών 2022
-      </h2>
+        <div class="project-body prose">
+          <p>
+            Οι ιστορίες χρήστη (user stories) είναι ένα εργαλείο που χρησιμοποιούμε στην ανάπτυξη λογισμικού με χρήση
+            ευέλικτων μεθοδολογιών (agile methodologies). Είναι ένας απλός τρόπος περιγραφής απαιτήσεων από τον τελικό
+            χρήστη της εφαρμογής σε φυσική γλώσσα που ακολουθεί το εξής τρίπτυχο:
+          </p>
 
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        Από πέρσι που είχαμε την μεγάλη καταστροφή με τις πυρκαγιές στην Εύβοια, αναρωτηθήκαμε αν θα μπορούσε ένα ψηφιακό εργαλείο να βοηθήσει στην πρόληψη με την εθελοντική συμμετοχή των πολιτών. Παρακολουθήσαμε <a href="https://www.civilprotection.gr/el/antipyriki-periodos" target="_blank" rel="noopener noreferrer"><strong>την ανακοίνωση</strong></a> της έναρξης της αντιπυρικής περιόδου…
-      </p>
+          <div class="user-story-blueprint">
+            <div class="user-story-line">
+              <span class="user-story-keyword">Σαν</span>
+              <span class="user-story-slot">[ΡΟΛΟΣ]</span>
+            </div>
+            <div class="user-story-line">
+              <span class="user-story-keyword">Θα ήθελα</span>
+              <span class="user-story-slot">[ΑΝΑΓΚΗ]</span>
+            </div>
+            <div class="user-story-line">
+              <span class="user-story-keyword">Ώστε</span>
+              <span class="user-story-slot">[ΩΦΕΛΙΜΟ ΑΠΟΤΕΛΕΣΜΑ]</span>
+            </div>
+          </div>
 
-      <div class="video-player-frame">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/eEFM3G2vPD4" title="Ανακοίνωση Αντιπυρικής Περιόδου" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+          <p>
+            Ακολουθώντας <strong>τον σύνδεσμο <a href="https://bio.link/userstoriesskg" target="_blank"
+                rel="noopener noreferrer">https://bio.link/userstoriesskg</a></strong> μπορείτε να φτιάξετε τις δικές
+            σας ιστορίες χρήστη για την πόλη μας.
+          </p>
+          <p>
+            Το πρωτότυπο που βλέπετε ακολουθώντας το παραπάνω link, φτιάχθηκε σε περίπου 3 ώρες αξιοποιώντας τις
+            τεχνολογίες: Google Forms, Google Spreadsheets και την πλατφόρμα bio.link. Όλα τα παραπάνω εργαλεία
+            προσφέρονται δωρεάν.
+          </p>
 
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        … από το Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας και σκεφθήκαμε ότι η ενημέρωση της πυροσβεστικής, όχι τόσο για τις ενεργές εστίες φωτιάς αλλά περισσότερο για συμβάντα που θα μπορούσαν να οδηγήσουν σε πυρκαγιά, θα μπορούσε να γίνει εύκολα με μια online φόρμα επικοινωνίας. Δημιουργήσαμε λοιπόν την <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY77HustdrpSfLWqXATBSTBlRMUrGV6QI2QR3A94MP16yorg/viewform" target="_blank" rel="noopener noreferrer"><strong>παρακάτω ανώνυμη φόρμα</strong></a>:
-      </p>
-
-      <div class="preview-mockup-row">
-        <div class="preview-mockup-box">
-          <img src="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F18ca9d57-eb03-488e-8caf-0aad88da1bd2_656x882.png?w=700&ssl=1" 
-               data-full-img="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F18ca9d57-eb03-488e-8caf-0aad88da1bd2_656x882.png?w=700&ssl=1"
-               alt="Ανώνυμη Φόρμα Πρόληψης Πυρκαγιών" 
-               loading="lazy">
-          <p style="font-size: 0.875rem; font-weight: 600; color: var(--slate-600); margin-top: 12px;">Online Φόρμα Αναφοράς</p>
+          <h3>Πως το χρησιμοποιώ;</h3>
+          <p>
+            Από την κεντρική οθόνη επιλέγετε τον Δήμο για τον οποίο θέλετε να υποβάλετε μια πρόταση:
+          </p>
         </div>
-        <div class="preview-mockup-box">
-          <img src="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F911ff03b-2f34-4a5f-8be1-cf81bf756c60_595x279.png?w=700&ssl=1" 
-               data-full-img="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F911ff03b-2f34-4a5f-8be1-cf81bf756c60_595x279.png?w=700&ssl=1"
-               alt="Αυτοματοποιημένη δημοσίευση Twitter" 
-               loading="lazy">
-          <p style="font-size: 0.875rem; font-weight: 600; color: var(--slate-600); margin-top: 12px;">Αυτοματοποιημένο Tweet (#πυρκαγιά)</p>
+
+        <div class="preview-mockup-row project-wide">
+          <figure class="preview-mockup-box">
+            <img
+              src="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_2.jpg?fit=339%2C679&ssl=1"
+              data-full-img="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_2.jpg?fit=339%2C679&ssl=1"
+              alt="Επιλογή Δήμου - User Stories SKG" loading="lazy">
+            <figcaption>Βήμα 1: Επιλογή Δήμου</figcaption>
+          </figure>
+          <figure class="preview-mockup-box">
+            <img
+              src="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_4.jpg?fit=364%2C794&ssl=1"
+              data-full-img="https://i0.wp.com/openthessaloniki.org/wp-content/uploads/2023/03/Screenshot_4.jpg?fit=364%2C794&ssl=1"
+              alt="Συμπλήρωση Φόρμας - User Stories SKG" loading="lazy">
+            <figcaption>Βήμα 2: Συμπλήρωση Φόρμας</figcaption>
+          </figure>
         </div>
-      </div>
 
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        … η οποία συλλέγει τις αναφορές σε αυτό το δημόσια διαθέσιμο <a href="https://docs.google.com/spreadsheets/d/1aPbSpnt8q9lmjiiGZIbnzNg49wI11gCgb5w6FR5LKvI/edit#gid=1275439845" target="_blank" rel="noopener noreferrer"><strong>Google Spreadsheet</strong></a>. Για ακόμη μεγαλύτερη διάχυση της πληροφορίας, η αναφορά δημοσιεύεται στο Twitter με την χρήση των tags <code>#πυρκαγιά</code> και <code>#πυρκαγιές</code> που παρατηρήσαμε ότι η πυροσβεστική υπηρεσία χρησιμοποιεί επίσης στον δικό της λογαριασμό Twitter.
-      </p>
+        <div class="project-body prose">
+          <p>
+            Στην συνέχεια συμπληρώνετε τη φόρμα που εμφανίζεται στην οθόνη σας.
+          </p>
+          <p>
+            Έχετε τελειώσει! Μπορείτε να δείτε συγκεντρωτικά τα αιτήματα των πολιτών ανά Δήμο <a
+              href="https://docs.google.com/spreadsheets/d/1drVGZbbhA2ObnEbYOMDmAUUToQVEQnaZ83SBqAE4BUw/edit#gid=383896163"
+              target="_blank" rel="noopener noreferrer"><strong>σε αυτόν τον σύνδεσμο</strong></a>.
+          </p>
 
-      <p style="font-size: 1.05rem; color: var(--slate-700); line-height: 1.8; margin-bottom: 20px;">
-        Η διαδικασία ενημέρωσης του Google Spreadsheet και του Twitter είναι πλήρως αυτοματοποιημένη.
-      </p>
+          <aside class="notes-callout">
+            <h4>ΣΗΜΕΙΩΣΕΙΣ:</h4>
+            <ul>
+              <li>Η κατάθεση ενός αιτήματος είναι ανώνυμη. Δεν θα σας ζητηθεί κανενός είδους προσωπικό δεδομένο, ούτε
+                καν διεύθυνση e-mail.</li>
+              <li>Τα αιτήματα που καταθέτετε είναι διαθέσιμα δημόσια μέσω <a
+                  href="https://docs.google.com/spreadsheets/d/1drVGZbbhA2ObnEbYOMDmAUUToQVEQnaZ83SBqAE4BUw/edit#gid=383896163"
+                  target="_blank" rel="noopener noreferrer">αυτού του συνδέσμου</a>. Ως εκ τούτου πρέπει να είστε
+                προσεκτικοί σχετικά με τα στοιχεία που δημοσιοποιείτε καθώς καθίστανται δημόσια διαθέσιμα. Επίσης
+                παρακαλούμε για την επικοδομητική σας κριτική. Θα ήταν λυπηρό να αναγκαστούμε να κατεβάσουμε την
+                υπηρεσία επειδή κάποιοι χρήστες κατέθεσαν προτάσεις που περιείχαν άσεμνη φρασεολογία, ύβρεις ή
+                προσβλητικό περιεχόμενο.</li>
+            </ul>
+          </aside>
 
-      <p style="font-size: 0.95rem; font-style: italic; color: var(--slate-500); margin-bottom: 24px;">
-        ΣΗΜΕΙΩΣΗ: Τα δύο παραπάνω twits δεν αποτελούν πραγματικά συμβάντα αλλά δείγμα του πως θα εμφανιστεί μια αναφορά στην παραπάνω φόρμα.
-      </p>
+          <p class="thanks">Σας ευχαριστούμε εκ των προτέρων για την συμμετοχή!</p>
 
-      <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY77HustdrpSfLWqXATBSTBlRMUrGV6QI2QR3A94MP16yorg/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary">
-          Άνοιγμα Φόρμας Επικοινωνίας &rarr;
-        </a>
-        <a href="https://docs.google.com/spreadsheets/d/1aPbSpnt8q9lmjiiGZIbnzNg49wI11gCgb5w6FR5LKvI/edit#gid=1275439845" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-          Προβολή Google Spreadsheet
-        </a>
-      </div>
-    </section>
+          <div class="project-actions">
+            <a href="https://bio.link/userstoriesskg" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Άνοιγμα bio.link/userstoriesskg
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 2: Fire Prevention -->
+      <section class="project-showcase" aria-labelledby="project-fire">
+        <header class="project-head">
+          <span class="project-badge-pill is-safety">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path
+                d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z">
+              </path>
+            </svg>
+            Civic Safety
+          </span>
+          <h2 class="project-title" id="project-fire">Β. Πρόληψη πυρκαγιών 2022</h2>
+        </header>
+
+        <div class="project-body prose">
+          <p>
+            Από πέρσι που είχαμε την μεγάλη καταστροφή με τις πυρκαγιές στην Εύβοια, αναρωτηθήκαμε αν θα μπορούσε ένα
+            ψηφιακό εργαλείο να βοηθήσει στην πρόληψη με την εθελοντική συμμετοχή των πολιτών. Παρακολουθήσαμε <a
+              href="https://www.civilprotection.gr/el/antipyriki-periodos" target="_blank"
+              rel="noopener noreferrer"><strong>την ανακοίνωση</strong></a> της έναρξης της αντιπυρικής περιόδου…
+          </p>
+        </div>
+
+        <div class="project-wide">
+          <div class="video-player-frame">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/eEFM3G2vPD4"
+              title="Ανακοίνωση Αντιπυρικής Περιόδου"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="project-body prose">
+          <p>
+            … από το Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας και σκεφθήκαμε ότι η ενημέρωση της
+            πυροσβεστικής, όχι τόσο για τις ενεργές εστίες φωτιάς αλλά περισσότερο για συμβάντα που θα μπορούσαν να
+            οδηγήσουν σε πυρκαγιά, θα μπορούσε να γίνει εύκολα με μια online φόρμα επικοινωνίας. Δημιουργήσαμε λοιπόν
+            την <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeY77HustdrpSfLWqXATBSTBlRMUrGV6QI2QR3A94MP16yorg/viewform"
+              target="_blank" rel="noopener noreferrer"><strong>παρακάτω ανώνυμη φόρμα</strong></a>:
+          </p>
+        </div>
+
+        <div class="preview-mockup-row project-wide">
+          <figure class="preview-mockup-box">
+            <img
+              src="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F18ca9d57-eb03-488e-8caf-0aad88da1bd2_656x882.png?w=700&ssl=1"
+              data-full-img="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F18ca9d57-eb03-488e-8caf-0aad88da1bd2_656x882.png?w=700&ssl=1"
+              alt="Ανώνυμη Φόρμα Πρόληψης Πυρκαγιών" loading="lazy">
+            <figcaption>Online Φόρμα Αναφοράς</figcaption>
+          </figure>
+          <figure class="preview-mockup-box">
+            <img
+              src="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F911ff03b-2f34-4a5f-8be1-cf81bf756c60_595x279.png?w=700&ssl=1"
+              data-full-img="https://i0.wp.com/substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F911ff03b-2f34-4a5f-8be1-cf81bf756c60_595x279.png?w=700&ssl=1"
+              alt="Αυτοματοποιημένη δημοσίευση Twitter" loading="lazy">
+            <figcaption>Αυτοματοποιημένο Tweet (#πυρκαγιά)</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-body prose">
+          <p>
+            … η οποία συλλέγει τις αναφορές σε αυτό το δημόσια διαθέσιμο <a
+              href="https://docs.google.com/spreadsheets/d/1aPbSpnt8q9lmjiiGZIbnzNg49wI11gCgb5w6FR5LKvI/edit#gid=1275439845"
+              target="_blank" rel="noopener noreferrer"><strong>Google Spreadsheet</strong></a>. Για ακόμη μεγαλύτερη
+            διάχυση της πληροφορίας, η αναφορά δημοσιεύεται στο Twitter με την χρήση των tags <code>#πυρκαγιά</code> και
+            <code>#πυρκαγιές</code> που παρατηρήσαμε ότι η πυροσβεστική υπηρεσία χρησιμοποιεί επίσης στον δικό της
+            λογαριασμό Twitter.
+          </p>
+          <p>
+            Η διαδικασία ενημέρωσης του Google Spreadsheet και του Twitter είναι πλήρως αυτοματοποιημένη.
+          </p>
+          <p class="note-muted">
+            ΣΗΜΕΙΩΣΗ: Τα δύο παραπάνω twits δεν αποτελούν πραγματικά συμβάντα αλλά δείγμα του πως θα εμφανιστεί μια
+            αναφορά στην παραπάνω φόρμα.
+          </p>
+
+          <div class="project-actions">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY77HustdrpSfLWqXATBSTBlRMUrGV6QI2QR3A94MP16yorg/viewform"
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Άνοιγμα Φόρμας Επικοινωνίας
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1aPbSpnt8q9lmjiiGZIbnzNg49wI11gCgb5w6FR5LKvI/edit#gid=1275439845"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Προβολή Google Spreadsheet
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <!-- Modern Footer -->
+  <!-- Footer -->
   <footer class="site-main-footer">
     <div class="container">
       <div class="footer-grid-top">
@@ -268,22 +366,17 @@
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom-legal">
-        <div>
-          // (ɔ)2026 | Ανάπτυξη: <a href="index.html">Ομάδα Open Thessaloniki</a> | Γραφιστική Επιμέλεια: <a href="https://www.behance.net/victwr" target="_blank" rel="noopener noreferrer">Βίκτωρ Γκουντάρας</a>
-        </div>
-        <div>
-          // Η ιστοσελίδα <a href="index.html">Open Thessaloniki</a> δημιουργήθηκε με το λογισμικό ανοικτού κώδικα <a href="https://www.wordpress.org" target="_blank" rel="noopener noreferrer">WordPress</a>
-        </div>
-      </div>
     </div>
   </footer>
 
   <button class="fab-back-to-top" aria-label="Επιστροφή στην κορυφή">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
   </button>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
